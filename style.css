@@ -1,0 +1,187 @@
+/* ========== Global ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ========== Sidebar ========== */
+.sidebar {
+  width: 220px;
+  background: #222;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #4caf50;
+}
+
+/* ========== Content ========== */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.hero img {
+  max-width: 150px;    /* ✅ foto index sudah dikecilkan */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+/* ========== Button ========== */
+.action-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px 4px;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.action-btn:hover {
+  background: #45a049;
+}
+
+/* ========== Footer ========== */
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ========== Form Contact ========== */
+.fs-form {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.fs-field {
+  margin-bottom: 20px;
+}
+
+.fs-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fs-input,
+.fs-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fs-button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fs-button:hover {
+  background: #45a049;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sidebar nav ul li {
+    margin: 10px 15px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .hero img {
+    max-width: 150px; /* tetap kecil di mobile */
+  }
+}
